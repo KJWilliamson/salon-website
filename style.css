@@ -1,0 +1,374 @@
+/* flexbox starter */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  padding: 20px;
+  font: 100% 'Antic Didone', serif;
+  background-color: black;
+  color: white;
+}
+
+/* end of flexbox starter */
+
+/* navbar container */
+.nav {
+    height: 10vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+/*     border: 2px solid red; */
+}
+.navBar {
+    display: flex;
+    flex-direction:row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1;
+    text-align: center;
+    padding: 3rem 1rem;
+    margin: 6px;
+    font-family: 'Antic Didone', serif;
+}
+
+.logo {
+    font-family: 'Cormorant Infant', serif;
+    color: #beb2c8;
+}
+
+a, ul, li {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+} 
+
+.bookOnline {
+    color: #beb2c8;
+}
+/* END OF NAVBAR */
+
+/* header container */
+header {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background: url('images/hair5.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+/*     border: 2px solid gold; */
+}
+
+.mainHeader {
+    color: #beb2c8;
+}
+
+h1 {
+    margin-bottom: auto;
+    font-family: 'Cormorant Infant', serif;
+    font-size: 5em;
+    height: 25vh;
+/*     border: 2px solid pink; */
+}
+/* END OF HEADER CONTAINER */
+
+/* coupon section container */
+.coupon {
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+/*     border: 2px solid yellow; */
+}
+
+.thistle {
+    color: #beb2c8;
+    font-size: 54px;
+}
+
+.buttonRewards {
+    background-color: #beb2c8; 
+    font-family: 'Cormorant Infant', serif;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* coupon cards */
+.card1 {
+    height: 245px;
+    width: 300px;
+    text-align: center;
+    font-family: 'Cormorant Infant', serif;
+    background-color: #beb2c8;
+    color: white;
+}
+
+.card2 {
+    height: 245px;
+    width: 300px;
+    text-align: center;
+    font-family: 'Cormorant Infant', serif;
+    background-color: #beb2c8;
+    color: white;
+}
+/* END OF COUPON CONTAINER */
+
+/* services container w/scissors */
+.services {
+    height: 45vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    padding-top: 45px;
+/*     border: 2px solid purple; */
+}
+
+/* scissor emoji size*/
+.emoji {
+    font-size: 30px;
+}
+/* END OF SERVICES CONTAINER */
+
+/* selfcare container */
+.selfCare {
+    height: 50vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-wrap: nonwrap;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    align-content: stretch;
+    color: black;
+}
+
+.textContent {
+    height: 350px;
+    width: 310px; 
+    align-items: flex-start;
+    text-align: center;
+    font-family: 'Cormorant Infant', serif;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.buttonSpa {
+    background-color: #beb2c8; 
+    font-family: 'Cormorant Infant', serif;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.imgContent1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.imgContent2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.imgContent3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.imgContent4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.imgContent5 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.care1 {
+    height: 350px; 
+    width: 200px;  
+}
+
+.care2 {
+    height: 350px; 
+    width: 200px;  
+}
+
+.care3 {
+    height: 350px; 
+    width: 200px;  
+}
+
+.care4 {
+    height: 350px; 
+    width: 200px;  
+}
+
+.care5 {
+    height: 350px; 
+    width: 200px;  
+}
+/* END OF SELFCARE MULTIPLE IMAGES CONTAINER */
+
+/* STORY CONTAINER  */
+.story {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+/*     border: 2px solid gold; */
+}
+
+
+.group {
+    height: 400px;
+    width: 600px;
+}
+
+.storyH {
+    font-size: 70px;
+}
+
+.storyHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.storyButton {
+    background-color: #beb2c8; 
+    font-family: 'Cormorant Infant', serif;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+/* END OF STORY CONTAINER */
+
+/* products container */
+.products {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    background-color: #beb2c8;
+    color: white;
+/*     border: 2px solid gold; */
+}
+
+h6 {
+    font-family: 'Cormorant Infant', serif;
+    font-size: 40px;
+}
+
+.hairProducts {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.productButton {
+    background-color: #beb2c8; 
+    font-family: 'Cormorant Infant', serif;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.imgProduct {
+    height: 400px;
+    width: 500px;
+}
+/* END OF PRODUCT CONTAINER */
+
+/* BEGINNING FOOTER CONTAINER */
+footer {
+    height: 30vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.logoFooter {
+    color: #beb2c8;
+}
+
+.canvaLogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    align-content: flex-end;
+}
+
+.logoC {
+    height: 200px;
+    width: 300px;
+}
+
+/* END OF FOOTER CONTAINER */
+
+/* MEDIA QUERIES */
+
