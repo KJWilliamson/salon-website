@@ -5,10 +5,13 @@
   box-sizing: inherit;
 }
 html {
+    /* 62.5% = base font-size is 10px */
   box-sizing: border-box;
 }
 body {
-  padding: 20px;
+/*   padding: 20px; */
+    /* 2.1rem would be 21px font-size */
+  padding: 2rem;
   font: 100% 'Antic Didone', serif;
   background-color: black;
   color: white;
@@ -18,24 +21,24 @@ body {
 
 /* navbar container */
 .nav {
-    height: 10vh;
+    height: 20vh;
     width: 100%;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
     background-color: black;
     color: white;
 /*     border: 2px solid red; */
 }
+
 .navBar {
-    display: flex;
-    flex-direction:row;
-    align-items: flex-start;
-    justify-content: space-evenly;
     background-color: black;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     line-height: 1;
     text-align: center;
-    padding: 3rem 1rem;
-    margin: 6px;
+    padding: 3rem 2rem;
+    margin: 5px;
     font-family: 'Antic Didone', serif;
 }
 
@@ -57,15 +60,16 @@ a, ul, li {
 
 /* header container */
 header {
-    height: 90vh;
+    /* changed from 90vh*/
+    height: 100vh;
     width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
     background: url('images/hair5.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-/*     border: 2px solid gold; */
 }
 
 .mainHeader {
@@ -73,10 +77,10 @@ header {
 }
 
 h1 {
-    margin-bottom: auto;
+/*     margin-bottom: auto; */
     font-family: 'Cormorant Infant', serif;
-    font-size: 5em;
-    height: 25vh;
+    font-size: 4em;
+/*     height: 25vh; */
 /*     border: 2px solid pink; */
 }
 /* END OF HEADER CONTAINER */
@@ -91,9 +95,18 @@ h1 {
 /*     border: 2px solid yellow; */
 }
 
+.middleText {
+    height: 15rem;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    
 .thistle {
     color: #beb2c8;
-    font-size: 54px;
+/*     font-size: 54px; */
+    font-size: 3.5em;
 }
 
 .buttonRewards {
@@ -101,19 +114,25 @@ h1 {
     font-family: 'Cormorant Infant', serif;
     border: none;
     color: white;
-    padding: 16px 32px;
+/*     padding: 16px 32px; */
+    padding: 1rem 2rem;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    margin: 4px 2px;
+/*     display: inline-block; */
+/*     font-size: 20px; */
+    font-size: 1.2em;
+/*     margin: 4px 2px; */
+    width: 32%;
     cursor: pointer;
 }
 
 /* coupon cards */
 .card1 {
-    height: 245px;
-    width: 300px;
+/*     height: 245px; */
+    height: 15rem;
+/*     width: 300px; */
+/*     width: 17rem; */
+    width: 30%;
     text-align: center;
     font-family: 'Cormorant Infant', serif;
     background-color: #beb2c8;
@@ -121,8 +140,11 @@ h1 {
 }
 
 .card2 {
-    height: 245px;
-    width: 300px;
+    /*     height: 245px; */
+    height: 15rem;
+/*     width: 300px; */
+/*     width: 17rem; */
+    width: 30%;
     text-align: center;
     font-family: 'Cormorant Infant', serif;
     background-color: #beb2c8;
@@ -138,40 +160,46 @@ h1 {
     flex-direction: row;
     flex-grow: 1;
     justify-content: space-evenly;
-    padding-top: 45px;
+/*     padding-top: 45px; */
+    padding-top: 3rem;
 /*     border: 2px solid purple; */
 }
 
 /* scissor emoji size*/
 .emoji {
-    font-size: 30px;
+/*     font-size: 30px; */
+    font-size: 2em;
 }
 /* END OF SERVICES CONTAINER */
 
 /* selfcare container */
 .selfCare {
-    height: 50vh;
+    /* changed from 50 */
+    height: 60vh;
     width: 100%;
     background-color: white;
     display: flex;
-    flex-wrap: nonwrap;
     flex-direction: row;
-    align-items: stretch;
-    justify-content: space-between;
-    align-content: stretch;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
     color: black;
 }
 
 .textContent {
-    height: 350px;
-    width: 310px; 
+    height: 22rem;
+/*     height: 350px; */
+/*     width: 310px;  */
+    width: 14rem;
     align-items: flex-start;
     text-align: center;
+    flex-grow: 1;
     font-family: 'Cormorant Infant', serif;
 }
 
 h2 {
-    font-size: 30px;
+/*     font-size: 30px; */
+    font-size: 2.5em;
 }
 
 .buttonSpa {
@@ -179,79 +207,76 @@ h2 {
     font-family: 'Cormorant Infant', serif;
     border: none;
     color: white;
-    padding: 16px 32px;
+    padding: 1rem;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+/*     display: inline-block; */
+/*     font-size: 16px; */
+    font-size: 1rem;
+/*     margin: 4px 2px; */
+    margin: 1rem;
     cursor: pointer;
 }
 
 .imgContent1 {
     display: flex;
     flex-direction: row;
-    align-items: center;
 }
 
 .imgContent2 {
     display: flex;
     flex-direction: row;
-    align-items: center;
 }
 
 .imgContent3 {
     display: flex;
     flex-direction: row;
-    align-items: center;
 }
 
 .imgContent4 {
     display: flex;
     flex-direction: row;
-    align-items: center;
-}
-
-.imgContent5 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 }
 
 
 .care1 {
-    height: 350px; 
-    width: 200px;  
+    height: 22rem;
+/*     height: 350px;  */
+/*     width: 200px;   */
+    width: 13rem;
 }
 
 .care2 {
-    height: 350px; 
-    width: 200px;  
+    height: 22rem;
+/*     height: 350px;  */
+/*     width: 200px;   */
+    width: 13rem;
 }
 
 .care3 {
-    height: 350px; 
-    width: 200px;  
+    height: 22rem;
+/*     height: 350px;  */
+/*     width: 200px;   */
+    width: 13rem; 
 }
 
 .care4 {
-    height: 350px; 
-    width: 200px;  
+    height: 22rem;
+/*     height: 350px;  */
+/*     width: 200px;   */
+    width: 13rem;
 }
 
-.care5 {
-    height: 350px; 
-    width: 200px;  
-}
 /* END OF SELFCARE MULTIPLE IMAGES CONTAINER */
+
 
 /* STORY CONTAINER  */
 .story {
-    height: 60vh;
+    /* changed from 60*/
+    height: 70vh;
     width: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     align-items: center;
     align-content: center;
     justify-content: space-around;
@@ -262,12 +287,14 @@ h2 {
 
 
 .group {
-    height: 400px;
-    width: 600px;
+/*     height: 400px; */
+    height: 25rem;
+/*     width: 600px; */
+    width: 37.5 rem;
 }
 
 .storyH {
-    font-size: 70px;
+    font-size: 3em;
 }
 
 .storyHeader {
@@ -281,23 +308,23 @@ h2 {
     font-family: 'Cormorant Infant', serif;
     border: none;
     color: white;
-    padding: 16px 32px;
+    padding: 2rem;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+/*     display: inline-block; */
+    font-size: 1em;
+    margin: 1rem;
     cursor: pointer;
 }
 /* END OF STORY CONTAINER */
 
 /* products container */
 .products {
-    height: 60vh;
+    /* changed from 60 */
+    height: 70vh;
     width: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     align-items: center;
     align-content: center;
     justify-content: space-around;
@@ -308,7 +335,8 @@ h2 {
 
 h6 {
     font-family: 'Cormorant Infant', serif;
-    font-size: 40px;
+/*     font-size: 40px; */
+    font-size: 2em;
 }
 
 .hairProducts {
@@ -322,30 +350,34 @@ h6 {
     font-family: 'Cormorant Infant', serif;
     border: none;
     color: white;
-    padding: 16px 32px;
+/*     padding: 16px 32px; */
+    padding: 1rem;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+/*     display: inline-block; */
+/*     font-size: 16px; */
+    font-size: 1em;
+    margin: 1rem;
     cursor: pointer;
-    border: 1px solid white;
+    border: .2rem solid white;
 }
 
 .imgProduct {
-    height: 400px;
-    width: 500px;
+/*     height: 400px; */
+    height: 25rem;
+/*     width: 500px; */
+    width: 31.25rem;
 }
 /* END OF PRODUCT CONTAINER */
 
 /* BEGINNING FOOTER CONTAINER */
 footer {
-    height: 30vh;
+    /* changed from 30 */
+    height: 40vh;
     width: 100%;
     background-color: black;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     align-items: center;
     align-content: center;
     justify-content: space-around;
@@ -364,11 +396,135 @@ footer {
 }
 
 .logoC {
-    height: 200px;
-    width: 300px;
+/*     height: 200px; */
+    height: 12.5rem;
+/*     width: 300px; */
+    width: 18.75rem;
 }
 
 /* END OF FOOTER CONTAINER */
 
-/* MEDIA QUERIES */
+/* MEDIA QUERIES use em for consistency across browsers */
+/* everything looks great until 1077 width */
+@media screen and (max-width: 1076px) {
+  h2 {
+    font-size: 1em;
+}
+}
+
+@media screen and (max-width: 996px) {
+/*     h2 {
+        font-size: .5em;
+} */
+    
+    .care4 {
+        display: none;
+}
+
+    h2 {
+        font-size: 2em;
+}
+
+    .thistle {
+        font-size: 2em;
+}
+    
+}
+
+@media screen and (max-width: 904px) {
+    .group {
+        width: 34rem;
+}
+    .imgProduct {
+        width: 29rem;
+}
+    h6 {
+        font-size: 1em;
+}
+}
+
+@media screen and (max-width: 865px) {
+    header {
+        background-size: contain;
+    }
+}
+
+@media screen and (max-width: 829px) {
+      .care2 {
+        display: none;
+}
+    .group {
+        width: 27rem;
+}
+}
+
+@media screen and (max-width: 679px) {
+    .navBar {
+        font-size: 1.2em;
+        line-height: 1;
+        text-align: center;
+        padding: 1rem;
+        margin: 5px;
+        font-family: 'Antic Didone', serif;
+}
+    h1 {
+        font-size: 2em;
+}
+    .thistle {
+        font-size: 1em;
+}
+    .buttonRewards {
+        padding: 1rem;
+        font-size: 1em;
+        width: 25%;
+}
+    h3, h4, h5, p {
+        font-size: .9rem;
+    }
+
+    .group {
+        height: 20rem;
+        width: 19rem;
+}
+    .imgProduct {
+        width: 20rem;
+}
+    .care3 {
+        display: none;
+}
+    emoji {
+/*     font-size: 30px; */
+    font-size: 1em;
+}
+    header {
+        height: 80vh;
+    }
+}
+
+
+
+@media screen and (max-width: 599px) {
+    header {
+        height: 60vh;
+    }
+
+    .group {
+        height: 15rem;
+        width: 14rem;
+}
+    .imgProduct {
+        width: 15rem;
+}
+    h3, h4, h5, p {
+        font-size: .5rem;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    .buttonRewards {
+        padding: 3rem;
+        font-size: 1.2em;
+        width: 33%;
+    }
+}
 
