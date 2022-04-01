@@ -1,6 +1,6 @@
 # salon-website for client
 
-# Keeping media queries in row with flexbox even on mobile
+# used flexbox & mobile responsive
 
 https://salon-1.netlify.app/
 
