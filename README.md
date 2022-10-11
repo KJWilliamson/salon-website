@@ -1,6 +1,6 @@
-# salon-website for client
+<h2>Salon website for client</h2>
 
-# used flexbox & mobile responsive
+<h3> Built using HTML, CSS, and Flexbox </h3>
 
 https://salon-1.netlify.app/
 
